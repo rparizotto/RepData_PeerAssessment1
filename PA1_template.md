@@ -80,7 +80,7 @@ plot(x=df_interval$interval, y=df_interval$average, type='l')
 
 ![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
-And calculate which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps
+And we calculate which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps
 
 ```r
 interval_max = df_interval$interval[which.max(df_interval$average)]
@@ -192,3 +192,4 @@ xyplot(average~interval|daytype, data=df_comp, type='l',layout=(c(1,2)))
 
 ![](PA1_template_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
 
+By looking at the chart, we can see difference in pattern.
